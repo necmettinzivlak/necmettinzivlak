@@ -6,6 +6,6 @@
 <h4 align="center">Software Developer | Turkey</h4>
 
 <p align="center">
-  <strong>Contact:</strong> necmettinzivlak@gmail.com &nbsp;|&nbsp;
+  <strong>Contact:</strong> zivlaknecmettin@gmail.com &nbsp;|&nbsp;
   <a href="https://www.linkedin.com/in/necmettinzivlak" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
 </p>
