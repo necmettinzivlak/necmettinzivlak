@@ -20,11 +20,23 @@
 
 ```typescript
 const necmettin = {
-    role: "Frontend Engineer",
+    role: "Frontend & Mobile Engineer",
     experience: "3+ years",
-    focus: ["Fintech Platforms", "Real-Time Systems", "Enterprise Tools"],
+    technologies: {
+        frontend: ["React", "Next.js", "TypeScript", "Vite", "Redux", "Zustand"],
+        mobile: ["Flutter"],
+        backend: ["Node.js", "Express.js", "REST APIs"],
+        database: ["PostgreSQL"],
+        devops: ["Docker", "Git", "CI/CD"],
+    },
+    domains: [
+        "Fintech & Trading Platforms",
+        "Real-Time Data Visualization",
+        "GPS & Fleet Management Systems",
+        "Enterprise Operational Tools",
+        "E-Commerce Platforms",
+    ],
     currently: "Building real-time financial market monitoring platforms",
-    languages: ["Turkish (Native)", "English (Professional)"],
 };
 ```
 
