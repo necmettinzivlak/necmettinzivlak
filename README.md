@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=Necmettin+Z%C4%B1vlak;Frontend+Engineer+%7C+React+%E2%80%A2+Next.js+%E2%80%A2+Flutter" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=4000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=750&height=45&lines=Necmettin+Z%C4%B1vlak" alt="Typing SVG" />
+<br/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=4000&pause=1000&color=8B949E&center=true&vCenter=true&multiline=false&repeat=true&width=750&height=30&lines=Frontend+Engineer+%7C+React+%E2%80%A2+Next.js+%E2%80%A2+TypeScript+%E2%80%A2+Flutter" alt="Typing SVG" />
 
 <br/>
 
