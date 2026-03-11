@@ -39,20 +39,3 @@ I care deeply about **clean architecture**, **great user experiences**, and writ
 
 </div>
 
----
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=necmettinzivlak&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=necmettinzivlak&layout=compact&theme=tokyonight&hide_border=true)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=necmettinzivlak&theme=tokyonight&hide_border=true)
-
-</div>
-
----
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=necmettinzivlak&style=for-the-badge&color=blue" alt="Profile Views"/>
-</div>
