@@ -18,27 +18,9 @@
 
 <br/>
 
-```typescript
-const necmettin = {
-    role: "Frontend & Mobile Engineer",
-    experience: "3+ years",
-    technologies: {
-        frontend: ["React", "Next.js", "TypeScript", "Vite", "Redux", "Zustand"],
-        mobile: ["Flutter"],
-        backend: ["Node.js", "Express.js", "REST APIs"],
-        database: ["PostgreSQL"],
-        devops: ["Docker", "Git", "CI/CD"],
-    },
-    domains: [
-        "Fintech & Trading Platforms",
-        "Real-Time Data Visualization",
-        "GPS & Fleet Management Systems",
-        "Enterprise Operational Tools",
-        "E-Commerce Platforms",
-    ],
-    currently: "Building real-time financial market monitoring platforms",
-};
-```
+<div align="center">
+  <img src="./assets/about.svg" alt="About Me" width="820" />
+</div>
 
 <br/>
 
