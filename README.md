@@ -57,10 +57,6 @@
   </tr>
   <tr>
     <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=redux" width="48" height="48" alt="Redux" />
-      <br><strong>Redux</strong>
-    </td>
-    <td align="center" width="96">
       <img src="https://skillicons.dev/icons?i=nodejs" width="48" height="48" alt="Node.js" />
       <br><strong>Node.js</strong>
     </td>
