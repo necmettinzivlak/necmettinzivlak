@@ -76,6 +76,10 @@
       <img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" />
       <br><strong>Docker</strong>
     </td>
+     <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=nginx" width="48" height="48" alt="Nginx" />
+      <br><strong>Nginx</strong>
+    </td>
     <td align="center" width="96">
       <img src="https://skillicons.dev/icons?i=git" width="48" height="48" alt="Git" />
       <br><strong>Git</strong>
