@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Necmettin Zivlak</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      background: #050507;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    .banner {
+      position: relative;
+      width: 1280px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #050507 0%, #0d0e12 50%, #07080a 100%);
+      color: #f4f4f5;
+    }
+    .banner::after {
+      content: "";
+      position: absolute;
+      inset: 1px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      pointer-events: none;
+    }
+    .glow {
+      position: absolute;
+      width: 900px;
+      height: 900px;
+      left: 350px;
+      top: -250px;
+      background: radial-gradient(circle, rgba(255,255,255,0.14), rgba(161,161,170,0.04) 45%, transparent 70%);
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+    .silk, .silk-lines, .flow {
+      position: absolute;
+      inset: 0;
+      width: 1280px;
+      height: 400px;
+    }
+    .silk { animation: drift 3s ease-in-out infinite alternate; }
+    .silk.reverse { animation: drift-back 3s ease-in-out infinite alternate; }
+    .flow { animation: drift 3s ease-in-out infinite alternate; opacity: 0.35; }
+    .content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      padding: 64px 64px 0;
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #d4d4d8;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 3.5px;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #fff;
+      animation: blink 3s ease-in-out infinite;
+    }
+    .rule {
+      width: 152px;
+      height: 1.5px;
+      margin-top: 12px;
+      background: rgba(255, 255, 255, 0.4);
+    }
+    h1 {
+      margin: 46px 0 0;
+      font-size: 60px;
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+    .role {
+      margin: 22px 0 0;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .sub {
+      margin: 12px 0 0;
+      color: #a1a1aa;
+      font-size: 18px;
+    }
+    .badges {
+      display: flex;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .badge {
+      height: 40px;
+      padding: 0 16px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1.2px solid rgba(255, 255, 255, 0.22);
+      font-size: 15px;
+    }
+    .split {
+      position: absolute;
+      z-index: 2;
+      left: 910px;
+      top: 65px;
+      width: 1px;
+      height: 280px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+    .focus {
+      position: absolute;
+      z-index: 2;
+      right: 64px;
+      top: 58px;
+      text-align: right;
+    }
+    .focus .label {
+      color: #a1a1aa;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
+    .focus p {
+      margin: 28px 0 0;
+      font-size: 25px;
+      font-weight: 400;
+    }
+    .focus p strong { font-weight: 500; }
+    .focus .dot-sep { color: #71717a; }
+    .place {
+      position: absolute;
+      z-index: 2;
+      right: 64px;
+      bottom: 48px;
+      color: #a1a1aa;
+      font-size: 16px;
+    }
+    @keyframes drift {
+      from { transform: translate(0, 0) scale(1); }
+      to { transform: translate(-40px, 16px) scale(1.04); }
+    }
+    @keyframes drift-back {
+      from { transform: translate(0, 0) scale(1); }
+      to { transform: translate(46px, -22px) scale(1.05); }
+    }
+    @keyframes glow {
+      from { opacity: 0.35; transform: translateX(0); }
+      to { opacity: 0.8; transform: translateX(-36px); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="glow"></div>
+    <svg class="silk" viewBox="0 0 1280 400" aria-hidden="true">
+      <defs>
+        <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+          <stop offset="0.5" stop-color="#d4d4d8" stop-opacity="0.28"/>
+          <stop offset="1" stop-color="#09090b" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+          <stop offset="0.5" stop-color="#fff" stop-opacity="0.35"/>
+          <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d="M480,-80 C680,120 520,280 780,480 L1150,480 C920,240 1080,80 850,-80 Z" fill="url(#silver)"/>
+      <path d="M450,-60 C660,140 500,300 760,460" fill="none" stroke="url(#line)" stroke-width="1.5"/>
+      <path d="M480,-60 C690,140 530,300 790,460" fill="none" stroke="url(#line)" stroke-width="0.6" opacity="0.5"/>
+    </svg>
+    <svg class="silk reverse" viewBox="0 0 1280 400" aria-hidden="true">
+      <defs>
+        <linearGradient id="silver2" x1="1" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#fff" stop-opacity="0.22"/>
+          <stop offset="0.4" stop-color="#71717a" stop-opacity="0.08"/>
+          <stop offset="1" stop-color="#000" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d="M650,-100 C850,60 620,260 440,480 L880,480 C1020,260 1180,120 1020,-100 Z" fill="url(#silver2)"/>
+      <path d="M380,450 Q750,240 920,-60" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+      <path d="M440,470 Q810,260 980,-40" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="0.6"/>
+    </svg>
+    <svg class="flow" viewBox="0 0 1280 400" aria-hidden="true">
+      <path d="M-50,260 Q120,380 340,430" fill="none" stroke="#fff" stroke-width="0.8" opacity="0.3"/>
+      <path d="M-50,290 Q120,410 340,460" fill="none" stroke="#fff" stroke-width="0.4" opacity="0.15"/>
+    </svg>
+
+    <div class="content">
+      <div class="status"><span class="dot"></span> OPEN TO WORK</div>
+      <div class="rule"></div>
+      <h1>Necmettin ZIVLAK</h1>
+      <div class="role">Frontend &amp; Mobile Engineer</div>
+      <div class="sub">Mobile, web, and realtime interfaces</div>
+      <div class="badges">
+        <div class="badge">Flutter</div>
+        <div class="badge">Dart</div>
+        <div class="badge">Riverpod</div>
+        <div class="badge">React</div>
+        <div class="badge">TypeScript</div>
+      </div>
+    </div>
+    <div class="split"></div>
+    <div class="focus">
+      <div class="label">FOCUS</div>
+      <p><strong>iOS <span class="dot-sep">•</span> Android</strong></p>
+      <p>Canvas <span class="dot-sep">•</span> Maps</p>
+      <p>Web</p>
+    </div>
+    <div class="place">Konya, Türkiye</div>
+  </div>
+</body>
+</html>
