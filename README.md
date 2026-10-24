@@ -1,14 +1,10 @@
 <div align="center">
-  <img src="./assets/banner.gif" alt="Necmettin Zivlak" width="100%" />
+  <img src="./assets/banner.png" alt="Necmettin Zivlak" width="100%" />
 </div>
 
-Flutter engineer looking for the next product role. Four years shipping iOS, Android, and web — trading interfaces, live maps, and operational tools. React, Next.js, and TypeScript sit next to Flutter, not in front of it.
+Flutter engineer, open to the next product role. Four years on iOS, Android, and web: a trading app at SadaApex, then fleet and workforce systems at Yerlem. Turkish native, English at a professional working level.
 
 [Website](https://necmettinzivlak.com) · [LinkedIn](https://www.linkedin.com/in/necmettinzivlak) · [Email](mailto:zivlaknecmettin@gmail.com)
-
----
-
-Open to Flutter and product engineering roles. Most recent work was a trading app at SadaApex, and before that fleet and workforce systems at Yerlem. Based in Konya. Turkish native, English at a professional working level.
 
 ## Experience
 
