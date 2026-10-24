@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="Necmettin Zivlak" width="100%" />
+  <img src="./assets/banner.gif" alt="Necmettin Zivlak" width="100%" />
 </div>
 
 Flutter engineer looking for the next product role. Four years shipping iOS, Android, and web — trading interfaces, live maps, and operational tools. React, Next.js, and TypeScript sit next to Flutter, not in front of it.
