@@ -1,4 +1,4 @@
-<img src="./assets/banner.svg" alt="Necmettin Zivlak, Frontend and Mobile Engineer" width="100%" />
+<img src="./assets/banner.png" alt="Necmettin Zivlak, Frontend and Mobile Engineer" width="100%" />
 
 I build production interfaces for live markets and live operations. Four years across web, iOS, and Android, with React, Next.js, TypeScript, and Flutter.
 
