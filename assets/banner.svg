@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="Necmettin Zivlak  Frontend and Mobile Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070B14"/>
+      <stop offset="55%" stop-color="#0E1726"/>
+      <stop offset="100%" stop-color="#12102A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C5CFF">
+        <animate attributeName="stop-color" values="#7C5CFF;#3DDCFF;#7C5CFF" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#3DDCFF">
+        <animate attributeName="stop-color" values="#3DDCFF;#7C5CFF;#3DDCFF" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#3DDCFF"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3DDCFF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#3DDCFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#grid)"/>
+
+  <circle cx="180" cy="40" r="180" fill="url(#glowA)" filter="url(#soft)">
+    <animate attributeName="cx" values="140;220;140" dur="14s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="300" r="200" fill="url(#glowB)" filter="url(#soft)">
+    <animate attributeName="cy" values="260;320;260" dur="12s" repeatCount="indefinite"/>
+  </circle>
+
+  <g opacity="0.9" fill="none" stroke="url(#accent)" stroke-width="1.4">
+    <polyline points="860,70 980,70 1040,130 1180,130">
+      <animate attributeName="stroke-dasharray" values="0,520;420,100;0,520" dur="7s" repeatCount="indefinite"/>
+    </polyline>
+    <polyline points="80,250 220,250 280,190 460,190">
+      <animate attributeName="stroke-dasharray" values="0,480;380,100;0,480" dur="9s" repeatCount="indefinite"/>
+    </polyline>
+  </g>
+
+  <g fill="#8B9BB4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">
+    <text x="78" y="78">01  /  PROFILE</text>
+    <text x="1040" y="78">KONYA · TR</text>
+  </g>
+
+  <text x="78" y="168" fill="#F4F7FB" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="58" font-weight="700">Necmettin Zivlak</text>
+  <text x="80" y="214" fill="url(#accent)" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="600">Frontend &amp; Mobile Engineer</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+    <rect x="78" y="246" rx="999" width="92" height="30" fill="#141C2C" stroke="#2A3548"/>
+    <text x="96" y="266" fill="#C9D4E5">React</text>
+    <rect x="180" y="246" rx="999" width="108" height="30" fill="#141C2C" stroke="#2A3548"/>
+    <text x="198" y="266" fill="#C9D4E5">Next.js</text>
+    <rect x="298" y="246" rx="999" width="124" height="30" fill="#141C2C" stroke="#2A3548"/>
+    <text x="316" y="266" fill="#C9D4E5">TypeScript</text>
+    <rect x="432" y="246" rx="999" width="108" height="30" fill="#141C2C" stroke="#2A3548"/>
+    <text x="450" y="266" fill="#C9D4E5">Flutter</text>
+    <rect x="550" y="246" rx="999" width="132" height="30" fill="#141C2C" stroke="#2A3548"/>
+    <text x="568" y="266" fill="#C9D4E5">WebSocket</text>
+  </g>
+
+  <rect x="78" y="312" width="220" height="3" rx="2" fill="url(#line)"/>
+</svg>
