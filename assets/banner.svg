@@ -4,8 +4,6 @@
       .font-sans {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       }
-      
-      /* Arka Plan Dalga Animasyonları */
       .wave-1 {
         animation: floatSlow 14s ease-in-out infinite alternate;
         transform-origin: center;
@@ -20,45 +18,32 @@
       .status-dot {
         animation: blink 3s ease-in-out infinite;
       }
-
       @keyframes floatSlow {
         0% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
         50% { transform: translate(-45px, 15px) scale(1.04) rotate(1deg); }
         100% { transform: translate(35px, -20px) scale(0.98) rotate(-1deg); }
       }
-
       @keyframes floatReverse {
         0% { transform: translate(0px, 0px) scale(1); }
         50% { transform: translate(50px, -25px) scale(1.06); }
         100% { transform: translate(-30px, 20px) scale(0.95); }
       }
-
       @keyframes pulseGlow {
         0% { opacity: 0.25; transform: translateX(0px); }
         100% { opacity: 0.65; transform: translateX(-40px); }
       }
-
       @keyframes blink {
-        0%, 100% { opacity: 1; filter: drop-shadow(0 0 5px #ffffff); }
-        50% { opacity: 0.3; filter: drop-shadow(0 0 0px #ffffff); }
-      }
-
-      .badge-bg {
-        fill: rgba(255, 255, 255, 0.04);
-        stroke: rgba(255, 255, 255, 0.22);
-        stroke-width: 1.2;
-        rx: 8px;
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.25; }
       }
     </style>
 
-    <!-- Ana Arka Plan Gradyanı -->
     <linearGradient id="bg-base" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#050507" />
       <stop offset="50%" stop-color="#0d0e12" />
       <stop offset="100%" stop-color="#07080a" />
     </linearGradient>
 
-    <!-- Gümüş / Beyaz Katman Gradyanları -->
     <linearGradient id="silver-1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.0" />
       <stop offset="45%" stop-color="#ffffff" stop-opacity="0.12" />
@@ -90,14 +75,10 @@
   </defs>
 
   <g clip-path="url(#canvas-clip)" class="font-sans">
-    <!-- 1. ZEMİN -->
     <rect width="1280" height="400" fill="url(#bg-base)" />
 
-    <!-- 2. HAREKETLİ SOYUT GÜMÜŞ KATMANLAR (ARKA PLAN) -->
-    <!-- Ortadaki Ambiyans Işığı -->
     <circle cx="800" cy="200" r="450" fill="url(#ambient-light)" class="wave-3" />
 
-    <!-- Hareketli Katman 1 (Geniş Gümüş İpek Dalga) -->
     <g class="wave-1">
       <path d="M 480,-80 C 680,120 520,280 780,480 L 1150,480 C 920,240 1080,80 850,-80 Z" fill="url(#silver-1)" />
       <path d="M 450,-60 C 660,140 500,300 760,460" fill="none" stroke="url(#line-grad)" stroke-width="1.5" opacity="0.7" />
@@ -105,64 +86,59 @@
       <path d="M 480,-60 C 690,140 530,300 790,460" fill="none" stroke="url(#line-grad)" stroke-width="0.5" opacity="0.2" />
     </g>
 
-    <!-- Hareketli Katman 2 (Ters Yönde Akan Keskin Katman) -->
     <g class="wave-2">
       <path d="M 650,-100 C 850,60 620,260 440,480 L 880,480 C 1020,260 1180,120 1020,-100 Z" fill="url(#silver-2)" />
-      <!-- Estetik Tel Kafes (Wireframe) Çizgileri -->
       <path d="M 380,450 Q 750,240 920,-60" fill="none" stroke="url(#line-grad)" stroke-width="1.2" opacity="0.6" />
       <path d="M 410,460 Q 780,250 950,-50" fill="none" stroke="url(#line-grad)" stroke-width="0.8" opacity="0.4" />
       <path d="M 440,470 Q 810,260 980,-40" fill="none" stroke="url(#line-grad)" stroke-width="0.5" opacity="0.25" />
       <path d="M 470,480 Q 840,270 1010,-30" fill="none" stroke="url(#line-grad)" stroke-width="0.3" opacity="0.15" />
     </g>
 
-    <!-- Sol Alt Köşe İnce Akış Çizgileri -->
     <g class="wave-1" opacity="0.35">
       <path d="M -50,260 Q 120,380 340,430" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.3" />
       <path d="M -50,275 Q 120,395 340,445" fill="none" stroke="#ffffff" stroke-width="0.6" opacity="0.2" />
       <path d="M -50,290 Q 120,410 340,460" fill="none" stroke="#ffffff" stroke-width="0.4" opacity="0.1" />
     </g>
 
-    <!-- 3. SOL BÖLÜM: KİMLİK VE TEKNOLOJİLER -->
-    <!-- OPEN TO WORK -->
     <g transform="translate(64, 72)">
       <circle cx="6" cy="-5" r="4" fill="#ffffff" class="status-dot" />
       <text x="18" y="0" fill="#d4d4d8" font-size="13" font-weight="600" letter-spacing="3.5">OPEN TO WORK</text>
       <line x1="0" y1="14" x2="152" y2="14" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.4" />
     </g>
 
-    <!-- İSİM & UNVAN -->
     <text x="64" y="168" fill="#ffffff" font-size="60" font-weight="800" letter-spacing="0.5">Necmettin ZIVLAK</text>
-    <text x="64" y="218" fill="#f4f4f5" font-size="28" font-weight="600" letter-spacing="0.3">Frontend & Mobile Engineer</text>
+    
+    <g transform="translate(64, 218)">
+      <text x="0" y="0" fill="#f4f4f5" font-size="28" font-weight="600" letter-spacing="0.3">Frontend</text>
+      <path d="M148,-4 C143,-4 140,-7 140,-11 C140,-14 143,-16 146,-18 C144,-20 143,-22 143,-24 C143,-27 145,-29 149,-29 C152,-29 154,-27 154,-24 C154,-21 151,-19 148,-17 L154,-11 C155,-13 156,-15 157,-17 L160,-17 C159,-14 157,-11 156,-9 L161,-4 L157,-4 L154,-7 C152,-5 150,-4 148,-4 Z M148,-7 C150,-7 151,-8 152,-9 L146,-15 C144,-14 143,-13 143,-11 C143,-8 145,-7 148,-7 Z M149,-26 C147,-26 146,-25 146,-24 C146,-22 147,-21 148,-19 C150,-21 151,-22 151,-24 C151,-25 150,-26 149,-26 Z" fill="#a1a1aa" transform="translate(-8, 4) scale(0.95)" />
+      <text x="162" y="0" fill="#f4f4f5" font-size="28" font-weight="600" letter-spacing="0.3">Mobile Engineer</text>
+    </g>
+
     <text x="64" y="254" fill="#a1a1aa" font-size="18" font-weight="400" letter-spacing="0.2">Mobile, web, and realtime interfaces</text>
 
-    <!-- TEKNOLOJİ ROZETLERİ (BADGES) -->
     <g transform="translate(64, 304)">
-      <!-- Flutter -->
       <g transform="translate(0, 0)">
-        <rect width="110" height="40" class="badge-bg" />
+        <rect width="110" height="40" rx="8" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.2" />
         <path d="M24,12 L16,20 L20,24 L32,12 L24,12 Z M24,22 L19,27 L24,32 L32,32 L24,24 L32,22 L24,22 Z" fill="#38bdf8" transform="translate(2, -2) scale(0.95)" />
         <text x="42" y="25" fill="#f4f4f5" font-size="15" font-weight="500">Flutter</text>
       </g>
 
-      <!-- Dart -->
       <g transform="translate(124, 0)">
-        <rect width="96" height="40" class="badge-bg" />
+        <rect width="96" height="40" rx="8" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.2" />
         <polygon points="18,20 26,12 32,18 24,28 18,20" fill="#0ea5e9" />
         <polygon points="24,28 32,18 32,26 26,28" fill="#38bdf8" />
         <text x="42" y="25" fill="#f4f4f5" font-size="15" font-weight="500">Dart</text>
       </g>
 
-      <!-- Riverpod -->
       <g transform="translate(234, 0)">
-        <rect width="128" height="40" class="badge-bg" />
+        <rect width="128" height="40" rx="8" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.2" />
         <path d="M18,23 C18,17 28,15 30,20 C32,24 22,27 18,23 Z" fill="#38bdf8" />
         <circle cx="24" cy="20" r="6" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-dasharray="18 8" />
         <text x="40" y="25" fill="#f4f4f5" font-size="15" font-weight="500">Riverpod</text>
       </g>
 
-      <!-- React -->
       <g transform="translate(376, 0)">
-        <rect width="106" height="40" class="badge-bg" />
+        <rect width="106" height="40" rx="8" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.2" />
         <g transform="translate(25, 20)" stroke="#38bdf8" stroke-width="1.2" fill="none">
           <ellipse rx="9" ry="3.5" transform="rotate(30)" />
           <ellipse rx="9" ry="3.5" transform="rotate(90)" />
@@ -172,49 +148,37 @@
         <text x="43" y="25" fill="#f4f4f5" font-size="15" font-weight="500">React</text>
       </g>
 
-      <!-- TypeScript -->
       <g transform="translate(496, 0)">
-        <rect width="144" height="40" class="badge-bg" />
+        <rect width="144" height="40" rx="8" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.2" />
         <rect x="16" y="11" width="18" height="18" rx="3" fill="#3b82f6" />
         <text x="19" y="24" fill="#ffffff" font-size="10" font-weight="800">TS</text>
         <text x="43" y="25" fill="#f4f4f5" font-size="15" font-weight="500">TypeScript</text>
       </g>
     </g>
 
-    <!-- 4. DİKEY AYIRAÇ ÇİZGİSİ -->
     <line x1="910" y1="65" x2="910" y2="345" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1" />
 
-    <!-- 5. SAĞ BÖLÜM: FOCUS & KONUM -->
     <g transform="translate(0, 0)">
       <text x="1216" y="80" text-anchor="end" fill="#a1a1aa" font-size="14" font-weight="600" letter-spacing="3">FOCUS</text>
 
-      <!-- iOS • Android -->
-      <text x="1184" y="142" text-anchor="end" fill="#ffffff" font-size="25" font-weight="500">iOS <tspan fill="#71717a">•</tspan> Android</text>
-      <!-- Telefon İkonu -->
+      <text x="1184" y="142" text-anchor="end" fill="#ffffff" font-size="25" font-weight="500">iOS  /  Android</text>
       <rect x="1198" y="122" width="14" height="22" rx="3" fill="none" stroke="#d4d4d8" stroke-width="1.8" />
       <line x1="1203" y1="140" x2="1207" y2="140" stroke="#d4d4d8" stroke-width="1.5" stroke-linecap="round" />
 
-      <!-- Canvas • Maps -->
-      <text x="1184" y="192" text-anchor="end" fill="#e4e4e7" font-size="25" font-weight="400">Canvas <tspan fill="#71717a">•</tspan> Maps</text>
-      <!-- Harita/Katman İkonu -->
+      <text x="1184" y="192" text-anchor="end" fill="#e4e4e7" font-size="25" font-weight="400">Canvas  /  Maps</text>
       <polygon points="1205,172 1196,177 1205,182 1214,177" fill="none" stroke="#d4d4d8" stroke-width="1.6" stroke-linejoin="round" />
       <polyline points="1196,182 1205,187 1214,182" fill="none" stroke="#d4d4d8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
       <polyline points="1196,187 1205,192 1214,187" fill="none" stroke="#d4d4d8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 
-      <!-- Web -->
       <text x="1184" y="242" text-anchor="end" fill="#e4e4e7" font-size="25" font-weight="400">Web</text>
-      <!-- Monitör/Web İkonu -->
       <rect x="1196" y="224" width="18" height="14" rx="2" fill="none" stroke="#d4d4d8" stroke-width="1.8" />
       <line x1="1201" y1="242" x2="1209" y2="242" stroke="#d4d4d8" stroke-width="1.8" stroke-linecap="round" />
 
-      <!-- Konum: Konya, Türkiye -->
-      <text x="1184" y="336" text-anchor="end" fill="#a1a1aa" font-size="16" font-weight="400">Konya, Türkiye</text>
-      <!-- Pin İkonu -->
+      <text x="1184" y="336" text-anchor="end" fill="#a1a1aa" font-size="16" font-weight="400">Konya, Turkiye</text>
       <path d="M1205,320 C1200.5,320 1197,323.5 1197,328 C1197,333.5 1205,340 1205,340 C1205,340 1213,333.5 1213,328 C1213,323.5 1209.5,320 1205,320 Z" fill="none" stroke="#a1a1aa" stroke-width="1.6" />
       <circle cx="1205" cy="328" r="2.2" fill="#a1a1aa" />
     </g>
 
-    <!-- İnce Çerçeve Kenarlığı -->
     <rect width="1278" height="398" x="1" y="1" rx="12" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
   </g>
 </svg>
