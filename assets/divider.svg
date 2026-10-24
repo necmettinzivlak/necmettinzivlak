@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 24" width="100%" height="100%">
+  <defs>
+    <style>
+      .beam {
+        animation: sweep 10s ease-in-out infinite alternate;
+      }
+      @keyframes sweep {
+        0% { transform: translateX(-280px); opacity: 0.35; }
+        50% { opacity: 0.9; }
+        100% { transform: translateX(280px); opacity: 0.35; }
+      }
+    </style>
+    <linearGradient id="base-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.0" />
+      <stop offset="20%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="80%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+    </linearGradient>
+    <linearGradient id="glow-beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="12" x2="1280" y2="12" stroke="url(#base-line)" stroke-width="1" />
+  <g class="beam">
+    <line x1="340" y1="12" x2="940" y2="12" stroke="url(#glow-beam)" stroke-width="1.8" />
+    <circle cx="640" cy="12" r="2.5" fill="#ffffff" />
+  </g>
+</svg>
