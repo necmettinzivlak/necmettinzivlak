@@ -1,12 +1,14 @@
-<img src="./assets/banner.png" alt="Necmettin Zivlak, Frontend and Mobile Engineer" width="100%" />
+<div align="center">
+  <img src="./banner.svg" alt="Necmettin ZIVLAK Banner" width="100%" />
+</div>
 
-I build production interfaces for live markets and live operations. Four years across web, iOS, and Android, with React, Next.js, TypeScript, and Flutter.
+Flutter engineer looking for the next product role. Four years shipping iOS, Android, and web — trading interfaces, live maps, and operational tools. React, Next.js, and TypeScript sit next to Flutter, not in front of it.
 
 [Website](https://necmettinzivlak.com) · [LinkedIn](https://www.linkedin.com/in/necmettinzivlak) · [Email](mailto:zivlaknecmettin@gmail.com)
 
 ---
 
-**Now** at SadaApex, shipping a Flutter trading product. Before that, enterprise fleet and workforce systems at Yerlem. Based in Konya. Turkish native, English at a professional working level.
+Open to Flutter and product engineering roles. Most recent work was a trading app at SadaApex, and before that fleet and workforce systems at Yerlem. Based in Konya. Turkish native, English at a professional working level.
 
 ## Experience
 
@@ -50,4 +52,4 @@ Umay, a corporate student-tracking interface. Yolbars, live-map tools for drawin
 
 ---
 
-Open to product engineering on web and mobile, especially realtime UI, maps, and financial interfaces.
+Available now. Best fit is a Flutter product team, with room for realtime UI, maps, and web.
