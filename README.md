@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="Necmettin Zivlak" width="100%" />
+  <img src="./assets/banner.svg" alt="About Me" width="820" />
 </div>
+
 
 Flutter engineer, open to the next product role. Four years on iOS, Android, and web: a trading app at SadaApex, then fleet and workforce systems at Yerlem. Turkish native, English at a professional working level.
 
