@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="About Me" width="820" />
+  <img src="https://cdn.jsdelivr.net/gh/necmettinzivlak/necmettinzivlak@main/assets/banner.svg" alt="Necmettin Zivlak" width="100%" />
 </div>
 
 
